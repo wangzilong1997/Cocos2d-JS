@@ -1,28 +1,40 @@
 
 var HelloWorldLayer = cc.Layer.extend({
     sprite:null,
+    redSprite:null,
+    speed:0,
+    num:0,
     ctor:function () {
         this._super();
         var size = cc.winSize;
 
-        var node1 = new cc.LayerColor(cc.color.BLUE,200,200);
-        node1.x = size.width/2;
-        node1.y = size.height/2;
-
-        node1.setAnchorPoint(0.5,0.5);
-        this.addChild(node1);
-
-        var node2 = new cc.LayerColor(cc.color.GREEN,200,200);
-        node2.x = size.width/2;
-        node2.y = size.height/2;
-        node2.setAnchorPoint(0,0);
-        this.addChild(node2);
-
-        node1.ignoreAnchorPointForPosition(false);
-        node2.ignoreAnchorPointForPosition(false);
-
+        this.addChild(new cc.LayerColor(cc.color.WHITE));
+        this.redSprite = new cc.Sprite(res.Red_png);
+        this.redSprite.x = size.width/2;
+        this.redSprite.y = 400;
+        this.addChild(this.redSprite);
+        this.redSprite.setLocalZOrder(3);
+        //估计这块控制时间表
+        this.schedule(this.myCallBack,0.02,cc.REPEAT_FOREVER,0);
         return true;
+    },
+    update:function (dt) {
+        cc.log("Timer"+dt)
+        this.num++
+        if (this.num > 1000){
+            this.unscheduleAllCallbacks()
+        }
+    },
+    myCallBack:function () {
+        cc.log(this.redSprite.y)
+        this.redSprite.y -= this.speed;
+        if(this.redSprite.y < 0){
+            this.speed = -12.6
+        }else{
+            this.speed += 0.2;
+        }
     }
+       
 });
 
 var HelloWorldScene = cc.Scene.extend({
