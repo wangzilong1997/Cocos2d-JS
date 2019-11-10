@@ -5,17 +5,21 @@ var HelloWorldLayer = cc.Layer.extend({
         this._super();
         var size = cc.winSize;
 
-        var sp1 = new cc.Sprite(res.Page_png);
-        // position the label on the center of the screen
-        sp1.x = size.width / 2;
-        sp1.y = size.height / 2;
-        // add the label as a child to this layer
-        this.addChild(sp1);
+        var node1 = new cc.LayerColor(cc.color.BLUE,200,200);
+        node1.x = size.width/2;
+        node1.y = size.height/2;
 
-        sp1.setAnchorPoint(1,1);
-        sp1.runAction(cc.repeatForever(cc.rotateBy(5,30)));
+        node1.setAnchorPoint(0.5,0.5);
+        this.addChild(node1);
 
-        cc.log("调试输出部分")
+        var node2 = new cc.LayerColor(cc.color.GREEN,200,200);
+        node2.x = size.width/2;
+        node2.y = size.height/2;
+        node2.setAnchorPoint(0,0);
+        this.addChild(node2);
+
+        node1.ignoreAnchorPointForPosition(false);
+        node2.ignoreAnchorPointForPosition(false);
 
         return true;
     }
