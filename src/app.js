@@ -1,38 +1,36 @@
 
 var HelloWorldLayer = cc.Layer.extend({
     sprite:null,
-    redSprite:null,
-    speed:0,
-    num:0,
+    ttfLabel:null,
     ctor:function () {
         this._super();
         var size = cc.winSize;
 
-        this.addChild(new cc.LayerColor(cc.color.WHITE));
-        this.redSprite = new cc.Sprite(res.Red_png);
-        this.redSprite.x = size.width/2;
-        this.redSprite.y = 400;
-        this.addChild(this.redSprite);
-        this.redSprite.setLocalZOrder(3);
-        //估计这块控制时间表
-        this.schedule(this.myCallBack,0.02,cc.REPEAT_FOREVER,0);
+        var ttfLabel = new cc.LabelTTF("这是LabelTTF","",50);
+        ttfLabel.x = size.width/2;
+        ttfLabel.y = size.height/2;
+
+        //字体样式部分
+        ttfLabel.setFontFillColor(cc.color.RED);
+        ttfLabel.setFontSize(100);
+        ttfLabel.enableStroke(cc.color.YELLOW,5);
+        ttfLabel.enableStroke(cc.color.WHITE,15,15,15);
+
+        this.addChild(ttfLabel);
+
+        this.ttfLabel = ttfLabel;
+
+        var labelBMFont = new cc.LabelBMFont("中国",res.LabelBitmap_fnt);
+        labelBMFont.x = size.width*0.5;
+        labelBMFont.y = size.height*0.3;
+        this.addChild(labelBMFont);
+
+        var labelBMFont2 = new cc.LabelBMFont("Hello World!",res.LabelBitmap2_fnt);
+        labelBMFont2.x = size.width*0.5;
+        labelBMFont2.y = size.height*0.15;
+        this.addChild(labelBMFont2);
+
         return true;
-    },
-    update:function (dt) {
-        cc.log("Timer"+dt)
-        this.num++
-        if (this.num > 1000){
-            this.unscheduleAllCallbacks()
-        }
-    },
-    myCallBack:function () {
-        cc.log(this.redSprite.y)
-        this.redSprite.y -= this.speed;
-        if(this.redSprite.y < 0){
-            this.speed = -12.6
-        }else{
-            this.speed += 0.2;
-        }
     }
        
 });
