@@ -6,29 +6,35 @@ var HelloWorldLayer = cc.Layer.extend({
         this._super();
         var size = cc.winSize;
 
-        var ttfLabel = new cc.LabelTTF("这是LabelTTF","",50);
-        ttfLabel.x = size.width/2;
-        ttfLabel.y = size.height/2;
+        var startMenuItem = new cc.MenuItemFont("开始",function () {
+            cc.log("开始按钮被点击")
+        },this);
+        var setMenuItem = new cc.MenuItemFont("设置",function(){
+            cc.log("设置按钮点击了！");
+        },this);
 
-        //字体样式部分
+        var ttfLabel = new cc.LabelTTF("其他","",30);
         ttfLabel.setFontFillColor(cc.color.RED);
-        ttfLabel.setFontSize(100);
-        ttfLabel.enableStroke(cc.color.YELLOW,5);
-        ttfLabel.enableStroke(cc.color.WHITE,15,15,15);
+        ttfLabel.enableStroke(cc.color.YELLOW,2);
+        ttfLabel.enableShadow(cc.color.WHITE,15,15,15);
 
-        this.addChild(ttfLabel);
+        var otherMenuItem = new cc.MenuItemLabel(ttfLabel,function(){
+            cc.log("其他按钮点击了！");
+        },this);
+        var menu = new cc.Menu(startMenuItem,setMenuItem,otherMenuItem);
+        this.addChild(menu);
+        menu.x = 0;
+        menu.y = 0;
 
-        this.ttfLabel = ttfLabel;
+        startMenuItem.x = size.width*0.5;
+        startMenuItem.y = size.height*0.5;
 
-        var labelBMFont = new cc.LabelBMFont("中国",res.LabelBitmap_fnt);
-        labelBMFont.x = size.width*0.5;
-        labelBMFont.y = size.height*0.3;
-        this.addChild(labelBMFont);
+        setMenuItem.x = size.width*0.2;
+        setMenuItem.y = size.height*0.3;
 
-        var labelBMFont2 = new cc.LabelBMFont("Hello World!",res.LabelBitmap2_fnt);
-        labelBMFont2.x = size.width*0.5;
-        labelBMFont2.y = size.height*0.15;
-        this.addChild(labelBMFont2);
+        otherMenuItem.x = size.width*0.8;
+        otherMenuItem.y = size.height*0.7;
+
 
         return true;
     }

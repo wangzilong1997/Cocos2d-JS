@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7c9113c-582c-41fa-8176-0cff09d8c7b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/label/bitmapFontChinese.fnt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/label/bitmapFontChinese.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/btn-about-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/btn-highscores-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/btn-highscores-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/btn-play-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/btn-play-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/music-off-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/music-off-selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/music-on-normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/menu/music-on-selected.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource.js" afterDir="false" />
@@ -18,12 +25,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1T98i7BXSnFSw8oqcX5vNICoIjq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/label" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/menu" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -32,12 +41,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\CocosJS\LS01\res\label" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\CocosJS\LS01\res\menu" />
       <recent name="F:\CocosJS\LS01\res\label" />
       <recent name="F:\CocosJS\LS01\res" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CocosJS\LS01\res\menu" />
+      <recent name="F:\CocosJS\LS01\res\label" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,7 +85,8 @@
       <updated>1572861074665</updated>
       <workItem from="1572861075825" duration="87000" />
       <workItem from="1573374466528" duration="743000" />
-      <workItem from="1573382859188" duration="6951000" />
+      <workItem from="1573382859188" duration="7123000" />
+      <workItem from="1573515498336" duration="887000" />
     </task>
     <servers />
   </component>
@@ -86,7 +98,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
