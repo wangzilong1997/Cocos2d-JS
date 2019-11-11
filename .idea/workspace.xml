@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7c9113c-582c-41fa-8176-0cff09d8c7b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/res/menu/btn-about-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/btn-highscores-normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/btn-highscores-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/btn-play-normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/btn-play-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/music-off-normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/music-off-selected.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/music-on-normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/menu/music-on-selected.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +75,7 @@
       <workItem from="1572861075825" duration="87000" />
       <workItem from="1573374466528" duration="743000" />
       <workItem from="1573382859188" duration="7123000" />
-      <workItem from="1573515498336" duration="887000" />
+      <workItem from="1573515498336" duration="1031000" />
     </task>
     <servers />
   </component>
