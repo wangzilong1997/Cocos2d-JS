@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7c9113c-582c-41fa-8176-0cff09d8c7b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/res/CloseNormal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/CloseSelected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MainScene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OverScene.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StartScene.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/World_local_Scene.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res/menu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -31,14 +40,15 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\CocosJS\LS01\res" />
+      <recent name="F:\CocosJS\LS01\res\menu" />
+      <recent name="F:\CocosJS\LS01\res\label" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\CocosJS\LS01\res\menu" />
       <recent name="F:\CocosJS\LS01\res\label" />
       <recent name="F:\CocosJS\LS01\res" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\CocosJS\LS01\res\menu" />
-      <recent name="F:\CocosJS\LS01\res\label" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -76,7 +86,8 @@
       <workItem from="1572861075825" duration="87000" />
       <workItem from="1573374466528" duration="743000" />
       <workItem from="1573382859188" duration="7123000" />
-      <workItem from="1573515498336" duration="1894000" />
+      <workItem from="1573515498336" duration="2078000" />
+      <workItem from="1573555807404" duration="2950000" />
     </task>
     <servers />
   </component>

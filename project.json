@@ -11,8 +11,9 @@
     "modules" : ["cocos2d"],
 
     "jsList" : [
-        "src/World_Local_Scene.js",
+        "src/MainScene.js",
+        "src/OverScene.js",
         "src/resource.js",
-        "src/app.js"
+        "src/StartScene.js"
     ]
 }
