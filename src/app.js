@@ -5,27 +5,34 @@ var HelloWorldLayer = cc.Layer.extend({
         //////////////////////////////
         // 1. super init first
         this._super();
-        var size = cc.winSize;
         this.addChild(new cc.LayerColor(cc.color.WHITE));
 
-        var playMenuItem = new cc.MenuItemImage(res.PlayBtnNormal_png, res.PlaytBtnSelected_png, function () {
-            cc.log("playMenuItem");
-        }, this);
+        var musicOnItem = new cc.MenuItemImage(res.MusicOnNormal_png,res.MusicOnSelected_png,function(){
 
-        var aboutMenuItem = new cc.MenuItemImage(res.AboutBtnNormal_png, res.AboutBtnSelected_png, function () {
-            cc.log("aboutMenuItem");
-        }, this);
+        },this);
+        var musicOffItem = new cc.MenuItemImage(res.MusicOffNormal_png,res.MusicOffSelected_png,function(){
+            ``
+        },this);
+        var ls = cc.sys.localStorage;
+        var toggleItem = new cc.MenuItemToggle(musicOnItem,musicOffItem,function () {
+            if (0 == toggleItem.getSelectedIndex()){
+                ls.setItem("isOn",0);
+            }else {
+                ls.setItem("isOn",1);
+            }
+        },this);
 
-        var highMenuItem = new cc.MenuItemImage(res.HightScoresBtnNormal_png, res.HighScoresBtnSelected_png, function () {
-            cc.log("highMenuItem");
-        }, this);
+        if(null == ls.getItem("isOn")){
 
-        var menu = new cc.Menu(playMenuItem, aboutMenuItem, highMenuItem);
+        }else if(0 == ls.getItem("isOn")){
+            toggleItem.setSelectedIndex(0);
+        }else if(1 == ls.getItem("isOn")){
+            toggleItem.setSelectedIndex(1);
+        }
+
+        var menu = new cc.Menu(toggleItem);
         this.addChild(menu);
-
-        menu.alignItemsHorizontallyWithPadding(50);
-        // menu.setPosition(cc.p(0,0));
-
+        return true;
 
         return true;
 
